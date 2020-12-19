@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Quiz</title>
+</head>
+<body onload="set_names()">
+    <center>
+        <h1>Math Quiz</h1>
+    </center>
+    <h3>&nbsp;&nbsp;<span id="player1_name"></span> : <span id="player1_score">0</span></h3>
+    <h3>&nbsp;&nbsp;<span id="player2_name"></span> : <span id="player2_score">0</span></h3>
+    <center>
+        <h2>Question Turn - <span id="question_turn"></span></h2>
+        <h2>Answer Turn - <span id="answer_turn"></span></h2>
+        <br>
+        <div id="output">
+
+        </div>
+        <br>
+        <input id="number1" placeholder="Number 1" class="Input form form-control" type="number">
+        <br>
+        <input id="number2" placeholder="Number 2" class="Input form form-control" type="number">
+        <br>
+        <button onclick="submit()" id="submit" class="btn btn-info">Submit Question</button>
+    </center>
+    <script src="game.js"></script>
+</body>
+</html>
